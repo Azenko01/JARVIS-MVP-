@@ -1,0 +1,60 @@
+{
+  "version": "1.0",
+  "last_update": "2024-01-01T00:00:00",
+  "knowledge_base": {
+    "programming": {
+      "python": {
+        "basics": "Python - високорівнева мова програмування з простим синтаксисом",
+        "functions": "Функції в Python визначаються ключовим словом def",
+        "classes": "Класи створюються за допомогою ключового слова class"
+      },
+      "javascript": {
+        "basics": "JavaScript - мова програмування для веб-розробки",
+        "functions": "Функції можуть бути оголошені як function або стрілочні функції",
+        "objects": "Об'єкти в JavaScript - це колекції пар ключ-значення"
+      }
+    },
+    "system_commands": {
+      "windows": {
+        "shutdown": "shutdown /s /t 0 - негайне вимкнення",
+        "restart": "shutdown /r /t 0 - негайне перезавантаження",
+        "sleep": "rundll32.exe powrprof.dll,SetSuspendState 0,1,0 - сплячий режим"
+      }
+    },
+    "applications": {
+      "browsers": {
+        "chrome": "Google Chrome - популярний веб-браузер",
+        "firefox": "Mozilla Firefox - відкритий веб-браузер",
+        "edge": "Microsoft Edge - браузер від Microsoft"
+      },
+      "editors": {
+        "vscode": "Visual Studio Code - безкоштовний редактор коду",
+        "notepad++": "Notepad++ - розширений текстовий редактор"
+      }
+    },
+    "user_preferences": {
+      "name": "Олександр",
+      "language": "українська",
+      "voice_speed": 150,
+      "voice_volume": 0.8
+    },
+    "learning_examples": [
+      {
+        "command": "відкрий калькулятор",
+        "action": "запуск calc.exe",
+        "learned_at": "2024-01-01T12:00:00"
+      },
+      {
+        "command": "покажи погоду",
+        "action": "отримання даних з weather API",
+        "learned_at": "2024-01-01T12:30:00"
+      }
+    ]
+  },
+  "statistics": {
+    "total_interactions": 0,
+    "successful_commands": 0,
+    "failed_commands": 0,
+    "learning_sessions": 0
+  }
+}

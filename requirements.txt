@@ -1,0 +1,51 @@
+# JARVIS v2.0 - Список залежностей
+# Встановлення: pip install -r requirements.txt
+
+# Основні залежності
+speechrecognition==3.10.0
+pyttsx3==2.90
+
+# Веб та API
+aiohttp==3.8.5
+requests==2.31.0
+beautifulsoup4==4.12.2
+openai==1.3.0
+
+# Обробка зображень та OCR
+Pillow==10.0.0
+pytesseract==0.3.10
+opencv-python==4.8.0.76
+
+# Системні операції
+psutil==5.9.5
+pyautogui==0.9.54
+
+# Обробка даних
+numpy==1.24.3
+pandas==2.0.3
+
+# Машинне навчання та векторна база
+sentence-transformers==2.2.2
+faiss-cpu==1.7.4
+scikit-learn==1.3.0
+
+# PDF обробка
+PyPDF2==3.0.1
+PyMuPDF==1.23.0
+
+# Telegram бот
+python-telegram-bot==20.7
+
+# Конфігурація
+python-dotenv==1.0.0
+
+# Тестування
+pytest==7.4.0
+pytest-asyncio==0.21.1
+
+# Windows-специфічні (встановлюються автоматично на Windows)
+pywin32==306; sys_platform == "win32"
+pyaudio==0.2.11; sys_platform == "win32"
+
+# Додаткові утиліти
+pathlib2==2.3.7
