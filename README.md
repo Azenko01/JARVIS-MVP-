@@ -1,357 +1,389 @@
-# 🤖 JARVIS MVP (Desktop AI-Assistant)
+# 🤖 JARVIS MVP (Desktop AI Assistant)
+This is the beta version of the program
+**Author:** Oleksandr Azenko
+**Version:** MVP v1
+**Language:** Python 3.8+
 
-**Автор:** Oleksandr Azenko  
-**Версія:** MVP v1  
-**Мова:** Python 3.8+
+## 📋 Project Description
 
-## 📋 Опис проєкту
+JARVIS is a personal voice assistant in the style of J.A.R.V.I.S. from the "Iron Man" movie. The assistant runs on a computer, accepts voice commands in Ukrainian and English, performs system tasks, speaks responses, and learns from the user.
 
-JARVIS - це персональний голосовий асистент в стилі Джарвіса з фільму "Залізна людина". Асистент працює на комп'ютері, приймає голосові команди українською та англійською мовами, виконує системні завдання, озвучує відповіді та навчається від користувача.
+## ✨ Key Features
 
-## ✨ Основні можливості
+### 🎤 Voice Control
 
-### 🎤 Голосове управління
-- ✅ Розпізнавання української та англійської мови
-- ✅ Озвучування відповідей м'яким жіночим голосом
-- ✅ Активація фразою: "Привіт, Джарвіс"
-- ✅ Режими: голосовий та текстовий вивід
+* ✅ Recognition of Ukrainian and English speech
+* ✅ Voice responses with a soft female voice
+* ✅ Activation phrase: "Hello, Jarvis"
+* ✅ Modes: voice and text output
 
-### 🧠 Інтелектуальні функції
-- ✅ Навчання новим командам в реальному часі
-- ✅ Збереження історії взаємодій
-- ✅ База знань з можливістю розширення
-- ✅ Інтеграція з GPT для складних запитань
+### 🧠 Intelligent Functions
 
-### 🔧 Системні команди
-- ✅ Відкриття та закриття додатків
-- ✅ Керування системою (вимкнення, перезавантаження)
-- ✅ Веб-пошук та навігація
-- ✅ Отримання інформації про погоду
-- ✅ Візуальний аналіз екрану
+* ✅ Learning new commands in real time
+* ✅ Saving interaction history
+* ✅ Expandable knowledge base
+* ✅ GPT integration for complex queries
 
-### 📱 Додаткові функції
-- ✅ Графічний інтерфейс (Dashboard)
-- ✅ Запис нотаток
-- ✅ Створення скріншотів
-- ✅ Аналіз коду на екрані
+### 🔧 System Commands
 
-## 🚀 Швидкий старт
+* ✅ Open and close applications
+* ✅ System control (shutdown, restart)
+* ✅ Web search and navigation
+* ✅ Weather information
+* ✅ Visual screen analysis
 
-### 1. Встановлення залежностей
+### 📱 Additional Features
 
-\`\`\`bash
-# Клонування репозиторію
+* ✅ Graphical interface (Dashboard)
+* ✅ Note-taking
+* ✅ Screenshot creation
+* ✅ On-screen code analysis
+
+## 🚀 Quick Start
+
+### 1. Install Dependencies
+
+```bash
+# Clone the repository
 git clone <repository-url>
 cd JARVIS_AI
 
-# Встановлення Python пакетів
+# Install Python packages
 pip install -r requirements.txt
-\`\`\`
+```
 
-### 2. Додаткові системні залежності
+### 2. Additional System Dependencies
 
 **Windows:**
-\`\`\`bash
-# Встановіть Tesseract OCR для розпізнавання тексту
-# Завантажте з: https://github.com/UB-Mannheim/tesseract/wiki
-\`\`\`
 
-**Налаштування мікрофона:**
-- Переконайтеся, що мікрофон працює
-- Надайте дозвіл на використання мікрофона
+```bash
+# Install Tesseract OCR for text recognition
+# Download from: https://github.com/UB-Mannheim/tesseract/wiki
+```
 
-### 3. Конфігурація
+**Microphone setup:**
 
-Створіть файл `.env` в корені проєкту:
+* Make sure the microphone is working
+* Grant permission to use the microphone
 
-\`\`\`env
-# API ключі (опціонально)
+### 3. Configuration
+
+Create a `.env` file in the project root:
+
+```env
+# API keys (optional)
 OPENAI_API_KEY=your_openai_api_key_here
 WEATHER_API_KEY=your_openweathermap_api_key_here
 
-# Налаштування голосу
+# Voice settings
 VOICE_LANGUAGE=uk-UA
 VOICE_RATE=150
 VOICE_VOLUME=0.8
 
-# Налаштування міста для погоди
-DEFAULT_CITY=Київ
-\`\`\`
+# Default city for weather
+DEFAULT_CITY=Kyiv
+```
 
-### 4. Запуск
+### 4. Launch
 
-\`\`\`bash
-# Запуск основного асистента
+```bash
+# Run main assistant
 python main.py
 
-# Запуск графічного інтерфейсу
+# Run graphical interface
 python gui/dashboard.py
-\`\`\`
+```
 
-## 🗣️ Приклади команд
+## 🗣️ Example Commands
 
-### Основні команди
-\`\`\`
-"Привіт, Джарвіс"           # Активація
-"Відкрий YouTube"           # Відкриття веб-сайтів
-"Запусти Chrome"            # Запуск додатків
-"Закрий всі вікна"          # Закриття вікон
-"Яка погода?"               # Інформація про погоду
-"Пошукай рецепт борщу"      # Веб-пошук
-"Що на екрані?"             # Аналіз екрану
-"Включи музику"             # Запуск музичного додатка
-\`\`\`
+### Basic Commands
 
-### Команди навчання
-\`\`\`
-"Джарвіс, навчися новій команді"
-"Запам'ятай цей PDF"
-"Онови свої знання"
-"Запиши в блокнот: текст нотатки"
-\`\`\`
+```
+"Hello, Jarvis"               # Activation
+"Open YouTube"                 # Open websites
+"Launch Chrome"                # Run applications
+"Close all windows"            # Close windows
+"What’s the weather?"          # Weather info
+"Search for borscht recipe"    # Web search
+"What’s on the screen?"        # Screen analysis
+"Play music"                   # Launch music app
+```
 
-### Системні команди
-\`\`\`
-"Вимкни комп'ютер"          # З підтвердженням
-"Перезавантаж систему"      # З підтвердженням
-"Сплячий режим"             # Гібернація
-"Заблокуй комп'ютер"        # Блокування екрану
-\`\`\`
+### Learning Commands
 
-### Режими роботи
-\`\`\`
-"Напиши на екрані"          # Текстовий вивід
-"Говори голосом"            # Голосовий вивід
-"Стоп"                      # Завершення роботи
-\`\`\`
+```
+"Jarvis, learn a new command"
+"Remember this PDF"
+"Update your knowledge"
+"Write in notebook: note text"
+```
 
-## 📁 Структура проєкту
+### System Commands
 
-\`\`\`
+```
+"Shut down computer"          # With confirmation
+"Restart system"              # With confirmation
+"Sleep mode"                   # Hibernate
+"Lock computer"                # Lock screen
+```
+
+### Work Modes
+
+```
+"Write on the screen"          # Text output
+"Speak with voice"              # Voice output
+"Stop"                          # Exit
+```
+
+## 📁 Project Structure
+
+```
 JARVIS_AI/
-├── main.py                     # Головний запуск
-├── config.py                   # Конфігурація
-├── voice/                      # Голосові модулі
-│   ├── listener.py             # Розпізнавання мовлення
-│   └── speaker.py              # Синтез мовлення
-├── memory/                     # Пам'ять і навчання
-│   ├── memory.db               # SQLite база даних
-│   ├── knowledge_base/         # База знань
-│   │   ├── pdf_data.json       # Знання з PDF
-│   │   └── notes.txt           # Нотатки користувача
-│   └── learner.py              # Логіка навчання
-├── plugins/                    # Плагіни команд
-│   ├── weather.py              # Погода
-│   ├── open_apps.py            # Керування додатками
-│   ├── search_web.py           # Веб-пошук
-│   ├── shutdown.py             # Системні команди
-│   └── visual_assistant.py     # Візуальний аналіз
-├── gui/                        # Графічний інтерфейс
+├── main.py                     # Main launch
+├── config.py                   # Configuration
+├── voice/                      # Voice modules
+│   ├── listener.py             # Speech recognition
+│   └── speaker.py              # Speech synthesis
+├── memory/                     # Memory & learning
+│   ├── memory.db               # SQLite database
+│   ├── knowledge_base/         # Knowledge base
+│   │   ├── pdf_data.json       # PDF knowledge
+│   │   └── notes.txt           # User notes
+│   └── learner.py              # Learning logic
+├── plugins/                    # Command plugins
+│   ├── weather.py              # Weather
+│   ├── open_apps.py            # App control
+│   ├── search_web.py           # Web search
+│   ├── shutdown.py             # System commands
+│   └── visual_assistant.py     # Visual analysis
+├── gui/                        # Graphical interface
 │   └── dashboard.py            # Dashboard
-├── requirements.txt            # Залежності
-└── README.md                   # Документація
-\`\`\`
+├── requirements.txt            # Dependencies
+└── README.md                   # Documentation
+```
 
-## 🔧 Налаштування
+## 🔧 Settings
 
-### Голосові налаштування
+### Voice Settings
 
-У файлі `config.py` можна змінити:
-- `VOICE_RATE` - швидкість мовлення (50-300)
-- `VOICE_VOLUME` - гучність (0.0-1.0)
-- `VOICE_LANGUAGE` - мова інтерфейсу
+In `config.py` you can change:
 
-### Безпека
+* `VOICE_RATE` – speech speed (50-300)
+* `VOICE_VOLUME` – volume (0.0-1.0)
+* `VOICE_LANGUAGE` – interface language
 
-Небезпечні команди заблоковані за замовчуванням:
-- Форматування дисків
-- Видалення системних файлів
-- Примусове вимкнення без підтвердження
+### Security
 
-### API інтеграції
+Dangerous commands are disabled by default:
 
-**OpenWeatherMap (погода):**
-1. Зареєструйтеся на https://openweathermap.org/
-2. Отримайте безкоштовний API ключ
-3. Додайте в `.env` файл
+* Disk formatting
+* Deleting system files
+* Forced shutdown without confirmation
 
-**OpenAI (розширені можливості):**
-1. Зареєструйтеся на https://platform.openai.com/
-2. Отримайте API ключ
-3. Додайте в `.env` файл
+### API Integrations
 
-## 🎯 Використання
+**OpenWeatherMap (Weather):**
 
-### Перший запуск
+1. Register at [https://openweathermap.org/](https://openweathermap.org/)
+2. Get a free API key
+3. Add it to `.env` file
 
-1. Запустіть `python main.py`
-2. Дочекайтеся повідомлення "JARVIS готовий до роботи"
-3. Скажіть "Привіт, Джарвіс" для активації
-4. Дайте команду, наприклад: "Відкрий YouTube"
+**OpenAI (Advanced Features):**
 
-### Навчання нових команд
+1. Register at [https://platform.openai.com/](https://platform.openai.com/)
+2. Get an API key
+3. Add it to `.env` file
 
-\`\`\`
-Ви: "Привіт, Джарвіс"
-JARVIS: "Так, слухаю тебе."
+## 🎯 Usage
 
-Ви: "Навчися новій команді"
-JARVIS: "Я слухаю. Назви команду та опиши її дію."
+### First Launch
 
-Ви: "Коли я скажу 'відкрий Telegram', відкрий програму Telegram.exe"
-JARVIS: "Команду вивчено! Тепер я знаю, як її виконувати."
-\`\`\`
+1. Run `python main.py`
+2. Wait for the message "JARVIS is ready"
+3. Say "Hello, Jarvis" to activate
+4. Give a command, e.g., "Open YouTube"
 
-### Графічний інтерфейс
+### Learning New Commands
 
-Dashboard надає:
-- 📜 Історію всіх взаємодій
-- 📊 Статистику використання
-- ⚡ Управління кастомними командами
-- ⚙️ Налаштування голосу та системи
-- 🎛️ Панель керування JARVIS
+```
+You: "Hello, Jarvis"  
+JARVIS: "Yes, I’m listening."  
 
-## 🔍 Усунення проблем
+You: "Learn a new command"  
+JARVIS: "I’m listening. Name the command and describe its action."  
 
-### Проблеми з голосом
+You: "When I say 'open Telegram', launch Telegram.exe"  
+JARVIS: "Command learned! I now know how to execute it."
+```
 
-**Мікрофон не працює:**
-\`\`\`bash
-# Перевірте список мікрофонів
+### Graphical Interface
+
+Dashboard provides:
+
+* 📜 Full interaction history
+* 📊 Usage statistics
+* ⚡ Custom command management
+* ⚙️ Voice and system settings
+* 🎛️ JARVIS control panel
+
+## 🔍 Troubleshooting
+
+### Voice Issues
+
+**Microphone not working:**
+
+```bash
+# Check microphone list
 python -c "import speech_recognition as sr; print(sr.Microphone.list_microphone_names())"
-\`\`\`
+```
 
-**Погане розпізнавання:**
-- Говоріть чітко та не дуже швидко
-- Зменшіть фоновий шум
-- Перевірте налаштування мікрофона
+**Poor recognition:**
 
-### Проблеми з додатками
+* Speak clearly and not too fast
+* Reduce background noise
+* Check microphone settings
 
-**Додаток не відкривається:**
-- Перевірте, чи встановлений додаток
-- Додайте шлях до додатка в `plugins/open_apps.py`
+### App Issues
 
-**Помилки дозволів:**
-- Запустіть від імені адміністратора (Windows)
-- Надайте необхідні дозволи (macOS/Linux)
+**App not opening:**
 
-### Проблеми з базою даних
+* Check if the app is installed
+* Add app path to `plugins/open_apps.py`
 
-**База даних пошкоджена:**
-\`\`\`bash
-# Видаліть файл бази даних (втратите історію)
+**Permission errors:**
+
+* Run as administrator (Windows)
+* Grant necessary permissions (macOS/Linux)
+
+### Database Issues
+
+**Database corrupted:**
+
+```bash
+# Delete database file (will lose history)
 rm memory/memory.db
 
-# Перезапустіть JARVIS для створення нової бази
+# Restart JARVIS to create a new database
 python main.py
-\`\`\`
+```
 
-## 🚧 Майбутні покращення
+## 🚧 Future Improvements
 
-### Версія 1.1
-- [ ] Інтеграція з Telegram ботом
-- [ ] Підтримка голосових команд через мережу
-- [ ] Розширена обробка PDF файлів
-- [ ] Автоматичне оновлення знань з інтернету
+### Version 1.1
 
-### Версія 1.2
-- [ ] Підтримка плагінів від спільноти
-- [ ] Інтеграція з IDE (VS Code, PyCharm)
-- [ ] Розпізнавання емоцій в голосі
-- [ ] Персоналізовані відповіді
+* [ ] Telegram bot integration
+* [ ] Voice commands over network
+* [ ] Advanced PDF processing
+* [ ] Automatic internet knowledge updates
 
-### Версія 2.0
-- [ ] Повноцінний режим навчання як у GPTs
-- [ ] Веб-інтерфейс
-- [ ] Мобільний додаток
-- [ ] Хмарна синхронізація
+### Version 1.2
 
-## 🤝 Внесок у проєкт
+* [ ] Community plugin support
+* [ ] IDE integration (VS Code, PyCharm)
+* [ ] Voice emotion recognition
+* [ ] Personalized responses
 
-Вітаються:
-- 🐛 Звіти про помилки
-- 💡 Пропозиції нових функцій
-- 🔧 Pull requests
-- 📖 Покращення документації
+### Version 2.0
 
-### Як долучитися:
+* [ ] Full learning mode like GPTs
+* [ ] Web interface
+* [ ] Mobile app
+* [ ] Cloud sync
 
-1. Fork репозиторію
-2. Створіть feature branch
-3. Зробіть зміни
-4. Додайте тести
-5. Створіть Pull Request
+## 🤝 Contribution
 
-## 📄 Ліцензія
+Contributions welcome:
 
-MIT License - використовуйте вільно для особистих та комерційних проектів.
+* 🐛 Bug reports
+* 💡 Feature suggestions
+* 🔧 Pull requests
+* 📖 Documentation improvements
 
-## 📞 Підтримка
+### How to Contribute:
 
-- 📧 Email: [ваш email]
-- 💬 Issues: [GitHub Issues]
-- 📱 Telegram: [ваш Telegram]
+1. Fork the repository
+2. Create a feature branch
+3. Make changes
+4. Add tests
+5. Create a Pull Request
 
-## 🙏 Подяки
+## 📄 License
 
-- OpenAI за GPT API
-- Google за Speech Recognition API
-- Спільноті Python за чудові бібліотеки
-- Фанатам Marvel за натхнення 😄
+MIT License – free to use for personal and commercial projects.
+
+## 📞 Support
+
+* 📧 Email: \[your email]
+* 💬 Issues: \[GitHub Issues]
+* 📱 Telegram: \[your Telegram]
+
+## 🙏 Acknowledgements
+
+* OpenAI for GPT API
+* Google for Speech Recognition API
+* Python community for amazing libraries
+* Marvel fans for inspiration 😄
 
 ---
 
-**"Іноді потрібно бігти, перш ніж навчишся ходити."** - Тоні Старк
+**"Sometimes you gotta run before you can walk."** – Tony Stark
 
-🤖 **JARVIS MVP v1** - Ваш персональний AI асистент готовий до роботи!
+🤖 **JARVIS MVP v1** – Your personal AI assistant is ready!
 
-## 🆕 Нові команди в MVP v1.1
+## 🆕 New Commands in MVP v1.1
 
-### 🧠 Навчання та оновлення
-\`\`\`
-"Джарвіс, онови себе"              # Оновлення з GitHub + база знань
-"Запам'ятай цей PDF"               # Навчання з PDF через GPT
-"Навчися новій команді"            # Інтерактивне навчання
-\`\`\`
+### 🧠 Learning & Updates
 
-### 💻 Асистент програміста
-\`\`\`
-"Аналізуй код"                     # Аналіз якості коду на екрані
-"Перевір код"                      # Перевірка на помилки
-"Відформатуй код"                  # Автоформатування
-"Запусти код"                      # Виконання поточного файлу
-"Створи Python файл"               # Новий файл з шаблоном
-"Вставити шаблон функції"          # Шаблони коду
-\`\`\`
+```
+"Jarvis, update yourself"         # Update from GitHub + knowledge base
+"Remember this PDF"               # Learn from PDF via GPT
+"Learn a new command"              # Interactive learning
+```
 
-### 🎯 Покращена активація
-\`\`\`
-"Привіт, Джарвіс"                  # Активація (тепер більш точна)
-"Напиши на екрані"                 # Текстовий режим
-"Говори голосом"                   # Голосовий режим
-\`\`\`
+### 💻 Programmer Assistant
 
-## 🔧 Нові можливості
+```
+"Analyze code"                     # Code quality analysis
+"Check code"                        # Error checking
+"Format code"                       # Auto-formatting
+"Run code"                          # Execute current file
+"Create Python file"                # New file from template
+"Insert function template"          # Code templates
+```
 
-### 🤖 Персоналізовані відповіді
-JARVIS тепер звертається до вас по імені та має різні стилі спілкування:
-- "Слухаю тебе, Олександре"
-- "Гаразд, відкриваю Visual Studio Code"
-- "Оновлюю свої знання з Python"
+### 🎯 Improved Activation
 
-### 📚 Навчання з PDF
-- Автоматичне витягування знань з PDF файлів
-- Інтеграція з GPT для структурування інформації
-- Збереження в базі знань для подальшого використання
+```
+"Hello, Jarvis"                    # Activation (more accurate now)
+"Write on the screen"               # Text mode
+"Speak with voice"                  # Voice mode
+```
 
-### 🔄 Автооновлення
-- Оновлення коду з GitHub репозиторію
-- Завантаження нових плагінів
-- Розширення бази знань з інтернету
+## 🔧 New Features
 
-### 💻 IDE інтеграція
-- Аналіз коду в реальному часі
-- Автоматичне форматування
-- Вставка шаблонів коду
-- Підказки по покращенню коду
+### 🤖 Personalized Responses
+
+JARVIS now addresses you by name and uses different conversation styles:
+
+* "Listening to you, Oleksandr"
+* "Alright, opening Visual Studio Code"
+* "Updating my Python knowledge"
+
+### 📚 Learning from PDF
+
+* Automatic extraction of knowledge from PDF files
+* GPT integration for structuring information
+* Saved in knowledge base for later use
+
+### 🔄 Auto-Update
+
+* Update code from GitHub repository
+* Download new plugins
+* Expand knowledge base from the internet
+
+### 💻 IDE Integration
+
+* Real-time code analysis
+* Automatic formatting
+* Insert code templates
+* Code improvement suggestions
